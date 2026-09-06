@@ -45,3 +45,8 @@ The Next.js foundation includes a responsive deal-feed dashboard, typed domain
 models, mock clearance data, and the shared retailer-adapter contract. Database,
 authentication, and live retailer collection are intentionally deferred until
 the data-access proof of concept.
+
+The initial data-access proof is documented in
+[docs/data-access-poc.md](docs/data-access-poc.md). Automated collection is
+limited to authorized retailer APIs; manual observations cover in-store-only
+markdowns.
