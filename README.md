@@ -47,6 +47,9 @@ authentication, and live retailer collection are intentionally deferred until
 the data-access proof of concept.
 
 The initial data-access proof is documented in
-[docs/data-access-poc.md](docs/data-access-poc.md). Automated collection is
-limited to authorized retailer APIs; manual observations cover in-store-only
-markdowns.
+[docs/data-access-poc.md](docs/data-access-poc.md). Automated collection prefers
+authorized retailer APIs and permits only bounded public-page experiments that
+stop when access is denied.
+
+The bounded Home Depot browser experiment is documented in
+[docs/home-depot-browser-poc.md](docs/home-depot-browser-poc.md).

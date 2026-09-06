@@ -4,10 +4,10 @@ Validated September 6, 2026.
 
 ## Decision
 
-Aisle Hunter will not scrape either retailer's consumer website. Collection is
-restricted to authorized APIs and observations entered by the app owner. This
-keeps retailer integrations replaceable and avoids depending on undocumented
-website internals or bypassing access controls.
+Aisle Hunter prefers authorized APIs. A bounded browser experiment may read the
+same public clearance page visible to a shopper, at low frequency, without
+sign-in or access-control bypass. Collection stops when access is denied. This
+keeps retailer integrations replaceable and avoids undocumented private APIs.
 
 ## Lowe's
 
@@ -33,7 +33,8 @@ manual until an authorized source or partnership is available.
 
 - A retailer-neutral observation contract
 - Source provenance: `authorized_api` or `manual`
-- A manual observation adapter for either retailer
+- A manual observation adapter retained as a development fixture
+- A bounded Home Depot public-page browser experiment
 - Conservative clearance classification
 - Tests covering confirmed, likely, possible, and rejected observations
 
