@@ -21,6 +21,27 @@ sale price as confirmed clearance.
 See [docs/product-plan.md](docs/product-plan.md) for the initial implementation
 plan and data model.
 
+## Local development
+
+Requires Node.js 24.
+
+```bash
+npm install
+npm run dev
+```
+
+Then open `http://localhost:3000`.
+
+## Checks
+
+```bash
+npm run lint
+npm run build
+```
+
 ## Status
 
-Repository initialized. Application scaffolding is the next step.
+The Next.js foundation includes a responsive deal-feed dashboard, typed domain
+models, mock clearance data, and the shared retailer-adapter contract. Database,
+authentication, and live retailer collection are intentionally deferred until
+the data-access proof of concept.
